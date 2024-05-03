@@ -9,6 +9,8 @@ const API_PARAMS = {
   orientation: 'horizontal',
   safesearch: true,
 };
+let currentQuery = ''; // zadeklaruj zmienne
+let currentPage = 1;
 
 document.addEventListener('DOMContentLoaded', function () {
   const lightbox = new SimpleLightbox('.gallery a');
