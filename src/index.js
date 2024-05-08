@@ -9,11 +9,11 @@ const API_PARAMS = {
   orientation: 'horizontal',
   safesearch: true,
 };
-let currentQuery = ''; // zadeklaruj zmienne
+let currentQuery = '';
 let currentPage = 1;
+const lightbox = new SimpleLightbox('.gallery a');
 
 document.addEventListener('DOMContentLoaded', function () {
-  const lightbox = new SimpleLightbox('.gallery a');
   document
 
     .getElementById('search-form')
